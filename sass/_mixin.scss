@@ -1,0 +1,16 @@
+@mixin common-btn {
+    background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+@mixin text-bg {
+    background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
