@@ -345,6 +345,37 @@ a {
         }
       }
     }
+    .resume-area {
+      h1 {
+        font-size: 2.5rem;
+      }
+      .education-box {
+        background-color: #111418;
+        padding: 3rem;
+        border-radius: 0.7rem;
+        h4 {
+          font-size: 1.4rem;
+          font-weight: 300;
+          background-color: #DC3545;
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          border-radius: 0.3rem;
+        }
+        h2 {
+          font-size: 2rem;
+          margin: 2rem 0rem 1rem;
+        }
+        h5 {
+          font-size: 1.4rem;
+          margin-bottom: 2rem;
+          font-weight: 300;
+          @include text-bg;
+        }
+        p {
+          font-size: 1.5rem;
+        }
+      }
+    }
   }
 }
 
@@ -439,6 +470,13 @@ a {
           }
         }
       }
+      .resume-area {
+        .education-box {
+          h2 {
+            font-size: 1.8rem;
+          }
+        }
+      }
     }
   }
 }
@@ -505,6 +543,17 @@ a {
                 font-size: 1.4rem;
               }
             }
+          }
+        }
+      }
+      .resume-area {
+        h1 {
+          font-size: 2rem;
+        }
+        .education-box {
+          padding: 2rem;
+          h2 {
+            font-size: 1.6rem;
           }
         }
       }
