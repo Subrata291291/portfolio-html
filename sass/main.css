@@ -276,6 +276,18 @@ a {
   left: 28%;
   transform: translate(-50%, -50%);
 }
+.main .main-right .banner-area .banner-right #play-audio i:after {
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  content: "";
+  position: absolute;
+  border-radius: 200%;
+  pointer-events: none;
+  animation: video-pulse 2s infinite;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .main .main-right .banner-area .banner-right p {
   font-size: 1.7rem;
   line-height: 2.7rem;
