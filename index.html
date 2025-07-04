@@ -9,23 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="images/my-pic.webp">
     <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap 5 -->
     <!--font aswome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!--font aswome -->
     <!-- Stylesheets -->
     <link rel="stylesheet" href="sass/main.css">
     <!-- Stylesheets -->
      <!--Slick css-->
-    <link rel="stylesheet" type="text/sass" href="css/slick.css">
-    <link rel="stylesheet" type="text/sass" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="sass/slick.css">
+    <link rel="stylesheet" type="text/css" href="sass/slick-theme.css">
     <!--Slick css-->
-    <!--aos css-->
-    <link rel="stylesheet" type="text/sass" href="css/aos.css">
     <!--Animate css-->
-    <link rel="stylesheet" type="text/sass" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="sass/animate.css">
+    <!--Animate css-->
+    <!--FancyBox css-->
     <link rel="stylesheet" href="sass/fancybox.min.css">
+    <!--FancyBox css-->
+    <!--aos css-->
+    <link rel="stylesheet" type="text/css" href="sass/aos.css">
+    <!--aos css-->
+
 </head>
 <body>
     <section class="main">
@@ -71,17 +76,17 @@
                             <div class="banner-heading">
                                 <ul class="d-flex justify-content-between align-items-center">
                                     <li>
-                                        <h2 data-aos="fade-up"><span><img src="images/hand.svg" alt=""></span> Hi, I'm Subrata</h2>
+                                        <h2><span><img src="images/hand.svg" alt=""></span> Hi, I'm Subrata</h2>
                                     </li>
                                     <li>
                                         <a class="nav-icon d-md-none" data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="fa-solid fa-bars"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <h1 class="mt-md-3 mt-lg-5" data-aos="fade-right">A Front-end <span>Developer &</span></h1>
+                            <h1 class="mt-md-3 mt-lg-5">A Front-end <span>Developer &</span></h1>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <div class="banner-left" data-aos="fade-in">
+                                    <div class="banner-left">
                                         <img src="images/header-img.png" alt="" class="banner-pic">
                                         <img src="images/arrow.png" alt="" class="arrow">
                                     </div>
@@ -114,7 +119,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="about-area p-100" id="about">
+                        <div class="about-area p-100" id="about" data-aos="fade-up">
                             <div class="container">
                                 <div class="title-box text-center d-flex justify-content-center align-items-center position-relative">
                                     <h2>ABOUT ME</h2>
@@ -183,7 +188,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="services-area" id="services">
+                        <div class="services-area" id="services" data-aos="fade-up">
                             <div class="container">
                                 <div class="title-box text-center d-flex justify-content-center align-items-center position-relative">
                                     <h2>Services</h2>
@@ -267,7 +272,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="resume-area p-100" id="resume">
+                        <div class="resume-area p-100" id="resume" data-aos="fade-up">
                             <div class="container">
                                 <div class="title-box text-center d-flex justify-content-center align-items-center position-relative">
                                     <h2>Summary</h2>
@@ -343,6 +348,117 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="skills-area" id="skills" data-aos="fade-up">
+                            <div class="container">
+                                <div class="title-box text-center d-flex justify-content-center align-items-center position-relative">
+                                    <h2>Skills</h2>
+                                    <h3><span><img src="images/star.svg" alt=""></span> My Skills <span><img src="images/star.svg" alt=""></span></h3>
+                                </div>
+                                <div class="skills-row">
+                                    <div class="skills-col">
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>Wordpress</span><span class="count" data-count="65">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="65%"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>Adbobe Photoshop</span><span class="count" data-count="60">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="60%"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>Tailwind CSS</span><span class="count" data-count="60">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="60%"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>Figma</span><span class="count" data-count="60">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="60%"></div>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>ACF</span><span class="count" data-count="95">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="95%"></div>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>JavaScript</span><span class="count" data-count="80">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="80%"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="skills-col">
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>React JS</span><span class="count" data-count="70">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="70%"></div>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>HTML</span><span class="count" data-count="60">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="60%"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>CSS</span><span class="count" data-count="60">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="60%"></div>
+                                        </div>
+                                      </div>
+
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>Adobe XD</span><span class="count" data-count="60">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="60%"></div>
+                                        </div>
+                                      </div>
+                                
+                                      <div class="skill-group">
+                                        <div class="skill-label">
+                                          <span>Bootstrap</span><span class="count" data-count="90">0%</span>
+                                        </div>
+                                        <div class="progress">
+                                          <div class="progress-bar" data-width="90%"></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -352,26 +468,22 @@
 
 
     <!--Jquery JS-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--Jquery JS-->
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!--Bootstrap JS-->
     <!--Slick JS-->
     <script src="js/slick.min.js"></script>
     <!--Slick JS-->
-
-    <!--custom JS-->
+    <!--Slick JS-->
     <script src="js/custom.js"></script>
-    <script src="js/fancybox.min.js"></script>
-    <script src="js/textanimation.js"></script>
-    <!--custom JS-->
-
+    <!--Slick JS-->
     <!---animation-js-->
     <script src="js/aos.js"></script>
     <script>
-      // Init AOS
-      function aos_init() {
+       // Init AOS
+       function aos_init() {
         AOS.init({
           duration: 1000,
           easing: "ease-in-out-back",
@@ -383,15 +495,9 @@
       });
     </script>
     <!---animation-js-->
-    
-    <script>
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 50) {
-          $('.scrolltop:hidden').stop(true, true).fadeIn();
-        } else {
-          $('.scrolltop').stop(true, true).fadeOut();
-        }
-      });
-    </script>
+    <!---fancybox---->
+    <script src="js/fancybox.min.js"></script>
+    <!---fancybox---->
+      
 </body>
 </html>

@@ -376,6 +376,47 @@ a {
         }
       }
     }
+    .skills-area {
+      .skills-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    
+        .skills-col {
+          flex: 1 1 45%;
+    
+          .skill-group {
+            margin-bottom: 3rem;
+    
+            .skill-label {
+              display: flex;
+              justify-content: space-between;
+              font-size: 1rem;
+              margin-bottom: 5px;
+    
+              span {
+                font-size: 1.6rem;
+              }
+            }
+    
+            .progress {
+              background-color: #333;
+              height: 8px;
+              border-radius: 20px;
+              overflow: hidden;
+    
+              .progress-bar {
+                width: 0; // will be animated via JS
+                height: 8px;
+                background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+                transition: width 1.5s ease; // ✅ Enable smooth animation
+              }
+            }
+          }
+        }
+      }
+    }
+    
   }
 }
 

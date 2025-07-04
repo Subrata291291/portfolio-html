@@ -363,6 +363,38 @@ a {
 .main .main-right .resume-area .education-box p {
   font-size: 1.5rem;
 }
+.main .main-right .skills-area .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.main .main-right .skills-area .skills-row .skills-col {
+  flex: 1 1 45%;
+}
+.main .main-right .skills-area .skills-row .skills-col .skill-group {
+  margin-bottom: 3rem;
+}
+.main .main-right .skills-area .skills-row .skills-col .skill-group .skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.main .main-right .skills-area .skills-row .skills-col .skill-group .skill-label span {
+  font-size: 1.6rem;
+}
+.main .main-right .skills-area .skills-row .skills-col .skill-group .progress {
+  background-color: #333;
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.main .main-right .skills-area .skills-row .skills-col .skill-group .progress .progress-bar {
+  width: 0;
+  height: 8px;
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  transition: width 1.5s ease;
+}
 
 /* =====================
    Responsive Media Queries
