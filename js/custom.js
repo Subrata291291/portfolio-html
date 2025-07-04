@@ -45,3 +45,18 @@
     }
   });
 //Skills data loading
+
+function playAudio() {
+    const audio = document.getElementById("myAudio");
+    const icon = document.getElementById("audio-icon");
+
+    if (audio.paused || audio.ended) {
+      audio.play();
+      icon.classList.remove("fa-play");
+      icon.classList.add("fa-pause");
+    } else {
+      audio.pause();
+      icon.classList.remove("fa-pause");
+      icon.classList.add("fa-play");
+    }
+  }

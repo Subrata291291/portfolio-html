@@ -103,7 +103,17 @@
                                        <p class="mt-5" data-aos="fade-right" data-aos-duration="1000">
                                         I’m a passionate and detail-oriented UI/UX designer with a strong focus on creating intuitive and visually appealing digital experiences. With a deep understanding of design principles, user behavior, and current trends, I specialize in crafting user interfaces that are not only beautiful but also functional and user-friendly.
                                        </p>
-                                       <button class="common-btn mt-4" onclick="window.open('images/resume.pdf', '_blank')"><span><i class="fa-solid fa-download"></i></span> Download CV</button>
+                                       <button class="common-btn" onclick="window.open('images/resume.pdf', '_blank')"><span><i class="fa-solid fa-download"></i></span> Download CV</button>
+                                       <button id="play-audio" onclick="playAudio()">
+                                            <img src="images/elements2.png" alt="" class="elements4">
+                                            <i id="audio-icon" class="fa-solid fa-play"></i>
+                                            <span>Play Audio</span>
+
+                                            <audio id="myAudio" preload="auto">
+                                                <source src="images/relax-song.mp3" type="audio/mpeg" />
+                                            </audio>
+                                        </button>
+
                                        <div class="social-media">
                                         <h3>Follow me on:</h3>
                                         <ul class="d-flex">

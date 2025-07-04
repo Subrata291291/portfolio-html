@@ -199,6 +199,9 @@ a {
   z-index: -1;
   max-width: 8rem;
 }
+.main .main-right .banner-area .banner-right p {
+  margin-bottom: 2rem;
+}
 .main .main-right .banner-area .banner-right h4 {
   background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
   -webkit-background-clip: text;
@@ -245,6 +248,33 @@ a {
   position: absolute;
   bottom: -5px;
   left: -5px;
+}
+.main .main-right .banner-area .banner-right #play-audio {
+  border: none;
+  background: transparent;
+  position: relative;
+  color: #fff;
+  margin-left: 3rem;
+}
+.main .main-right .banner-area .banner-right #play-audio span {
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .main-right .banner-area .banner-right #play-audio i {
+  color: #fff;
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 28%;
+  transform: translate(-50%, -50%);
 }
 .main .main-right .banner-area .banner-right p {
   font-size: 1.7rem;
