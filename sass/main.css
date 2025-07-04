@@ -580,4 +580,7 @@ a {
   .main .main-right .services-area .services-box ul li h3 {
     margin-bottom: 0.5rem;
   }
+  .main .main-right .skills-area .skills-row .skills-col .skill-group .skill-label span {
+    font-size: 1.3rem;
+  }
 }/*# sourceMappingURL=main.css.map */

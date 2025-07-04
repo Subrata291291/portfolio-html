@@ -697,6 +697,19 @@ a {
           }
         }
       }
+      .skills-area {
+        .skills-row {
+          .skills-col {
+            .skill-group {
+              .skill-label {
+                span {
+                  font-size: 1.3rem;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
