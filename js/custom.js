@@ -60,3 +60,18 @@ function playAudio() {
       icon.classList.add("fa-play");
     }
   }
+
+
+  // Portfolio  area
+
+$(document).ready(function () {
+  $('.portfolio-tab ul li').click(function () {
+    var tab_id = $(this).attr('data-tab');
+
+    $('.portfolio-tab ul li').removeClass('current');
+    $('.tab-content').removeClass('current');
+
+    $(this).addClass('current');
+    $("#" + tab_id).addClass('current');
+  });
+});

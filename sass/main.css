@@ -437,6 +437,56 @@ a {
   background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
   transition: width 1.5s ease;
 }
+.main .main-right .portfolio-area .tabs {
+  gap: 3rem;
+}
+.main .main-right .portfolio-area .tabs .tab-link {
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  display: flex;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.main .main-right .portfolio-area .tabs .tab-link p {
+  color: #fff;
+}
+.main .main-right .portfolio-area .tabs .current {
+  position: relative;
+}
+.main .main-right .portfolio-area .tabs .current img {
+  filter: brightness(0.5) invert(1);
+}
+.main .main-right .portfolio-area .tabs .current P {
+  color: #fff;
+}
+.main .main-right .portfolio-area .tabs .current::before {
+  content: "\f0d7";
+  font-family: FontAwesome;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  font-size: 3rem;
+  transform: translate(-50%);
+  height: 1rem;
+  color: #2CE97A;
+}
+.main .main-right .portfolio-area .tab-content {
+  display: none;
+  margin-top: 6rem;
+}
+.main .main-right .portfolio-area .tab-content .tab-box {
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.main .main-right .portfolio-area .tab-content .tab-box .gallery-content img {
+  transition: all 0.3s ease;
+}
+.main .main-right .portfolio-area .tab-content .tab-box .gallery-content img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.main .main-right .portfolio-area .current {
+  display: inherit;
+}
 
 /* =====================
    Responsive Media Queries
@@ -496,6 +546,9 @@ a {
   .main .main-right .resume-area .education-box h2 {
     font-size: 1.8rem;
   }
+  .main .main-right .portfolio-area .tabs .tab-link {
+    padding: 1rem 1rem;
+  }
 }
 @media (max-width: 991px) {
   .p-100 {
@@ -550,6 +603,10 @@ a {
   }
   .main .main-right .resume-area .education-box h2 {
     font-size: 1.6rem;
+  }
+  .main .main-right .portfolio-area .tabs {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   .main .title-box {
     margin-bottom: 2rem;
