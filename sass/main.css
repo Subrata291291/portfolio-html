@@ -487,6 +487,13 @@ a {
 .main .main-right .portfolio-area .current {
   display: inherit;
 }
+.main .main-right .whatsapp a {
+  color: green;
+  font-size: 7rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+}
 
 /* =====================
    Responsive Media Queries

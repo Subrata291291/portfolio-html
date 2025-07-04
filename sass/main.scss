@@ -509,6 +509,15 @@ a {
           display: inherit;
       }
     }
+    .whatsapp {
+      a {
+        color: green;
+        font-size: 7rem;
+        position: fixed;
+        right: 2rem;
+        bottom: 2rem;
+      }
+    }
   }
 }
 
