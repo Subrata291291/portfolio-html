@@ -477,12 +477,28 @@ a {
   overflow: hidden;
   margin-bottom: 1.5rem;
 }
+.main .main-right .portfolio-area .tab-content .tab-box .gallery-content {
+  position: relative;
+}
 .main .main-right .portfolio-area .tab-content .tab-box .gallery-content img {
   transition: all 0.3s ease;
 }
-.main .main-right .portfolio-area .tab-content .tab-box .gallery-content img:hover {
-  transform: scale(1.1);
-  transition: all 0.3s ease;
+.main .main-right .portfolio-area .tab-content .tab-box .gallery-content ul {
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -5rem;
+  transition: 0.3s;
+}
+.main .main-right .portfolio-area .tab-content .tab-box .gallery-content ul li a {
+  color: #fff;
+}
+.main .main-right .portfolio-area .tab-content .tab-box .gallery-content:hover ul {
+  margin-bottom: 0rem;
+  transition: 0.3s;
 }
 .main .main-right .portfolio-area .current {
   display: inherit;
@@ -691,6 +707,12 @@ a {
   }
   .main .main-right .skills-area .skills-row .skills-col .skill-group .skill-label span {
     font-size: 1.3rem;
+  }
+  .main .main-right .portfolio-area .tab-content .tab-box .gallery-content ul {
+    padding: 1rem 1rem;
+  }
+  .main .main-right .portfolio-area .tab-content .tab-box .gallery-content ul li a {
+    font-size: 1.2rem;
   }
   .main .main-right .whatsapp a {
     font-size: 4rem;

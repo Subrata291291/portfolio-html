@@ -495,13 +495,33 @@ a {
               overflow: hidden;
               margin-bottom: 1.5rem;
               .gallery-content {
+                position: relative;
                   img {
                       transition: all 0.3s ease;
                   }
-                  img:hover {
-                      transform: scale(1.1);
-                      transition: all 0.3s ease;
+                  // img:hover {
+                  //     transform: scale(1.1);
+                  //     transition: all 0.3s ease;
+                  // }
+                  ul {
+                        padding: 1rem 2rem;
+                        background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin-bottom: -5rem;
+                        transition: 0.3s;
+                    li {
+                      a {
+                        color: #fff;
+                      }
+                    }
                   }
+              }
+              .gallery-content:hover ul {
+                margin-bottom: 0rem;
+                transition: 0.3s;
               }
           }
       }
@@ -823,6 +843,22 @@ a {
               .skill-label {
                 span {
                   font-size: 1.3rem;
+                }
+              }
+            }
+          }
+        }
+      }
+      .portfolio-area {
+        .tab-content {
+          .tab-box {
+            .gallery-content {
+              ul {
+                padding: 1rem 1rem;
+                li {
+                  a {
+                    font-size: 1.2rem;
+                  }
                 }
               }
             }
