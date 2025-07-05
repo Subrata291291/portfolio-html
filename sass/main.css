@@ -615,6 +615,9 @@ a {
     flex-wrap: wrap;
     gap: 1rem;
   }
+  .main .main-right .whatsapp a {
+    font-size: 5rem;
+  }
   .main .title-box {
     margin-bottom: 2rem;
   }
@@ -688,5 +691,8 @@ a {
   }
   .main .main-right .skills-area .skills-row .skills-col .skill-group .skill-label span {
     font-size: 1.3rem;
+  }
+  .main .main-right .whatsapp a {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=main.css.map */
