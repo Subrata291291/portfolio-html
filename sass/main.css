@@ -12,6 +12,18 @@ body {
   background-repeat: no-repeat;
 }
 
+.body-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+  display: none;
+}
+
 ul, li, p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
