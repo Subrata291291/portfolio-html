@@ -113,7 +113,7 @@ $(".review-slider").slick({
   infinite: true,
   centerMode: true,
   arrows: false,
-  autoplay: false,
+  autoplay: true,
   slidesToShow: 2,
   slidesToScroll: 1,
   responsive: [{
