@@ -506,6 +506,54 @@ a {
 .main .main-right .portfolio-area .current {
   display: inherit;
 }
+.main .main-right .reviews-area .review-box {
+  background-color: #111418;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+.main .main-right .reviews-area .review-box ul {
+  gap: 2rem;
+}
+.main .main-right .reviews-area .review-box ul li img {
+  width: 6rem;
+  border-radius: 5rem;
+}
+.main .main-right .reviews-area .review-box ul li h4 {
+  font-size: 1.8rem;
+}
+.main .main-right .reviews-area .review-box ul li h5 {
+  font-size: 1.4rem;
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .main-right .reviews-area .review-box p {
+  margin: 3rem 0rem 2rem;
+}
+.main .main-right .reviews-area .review-box .rating ul {
+  gap: 0.3rem;
+  color: #D9D314;
+}
+.main .main-right .reviews-area .slick-dots li.slick-active button:before {
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main .main-right .reviews-area .slick-slide {
+  margin: 0rem 1rem;
+}
+.main .main-right .reviews-area .slick-slide:last-child {
+  margin: 0rem;
+}
+.main .main-right .reviews-area .slick-dots {
+  bottom: -5rem;
+}
+.main .main-right .reviews-area .slick-dots li button:before {
+  font-size: 4rem;
+  color: #fff;
+}
 .main .main-right .whatsapp a {
   color: green;
   font-size: 7rem;
@@ -716,6 +764,9 @@ a {
   }
   .main .main-right .portfolio-area .tab-content .tab-box .gallery-content ul li a {
     font-size: 1.2rem;
+  }
+  .main .main-right .reviews-area .review-box {
+    padding: 3rem;
   }
   .main .main-right .whatsapp a {
     font-size: 4rem;

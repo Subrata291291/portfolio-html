@@ -532,6 +532,56 @@ a {
           display: inherit;
       }
     }
+    .reviews-area {
+      .review-box {
+        background-color: #111418;
+        padding: 4rem;
+        border-radius: 0.5rem;
+        ul {
+          gap: 2rem;
+          li {
+            img {
+              width: 6rem;
+              border-radius: 5rem;
+            }
+            h4 {
+              font-size: 1.8rem;
+            }
+            h5 {
+              font-size: 1.4rem;
+              @include text-bg;
+            }
+          }
+        }
+        p {
+          margin: 3rem 0rem 2rem;
+        }
+        .rating {
+          ul {
+            gap: 0.3rem;
+            color: #D9D314;
+          }
+        }
+      }
+      .slick-dots li.slick-active button:before {
+        @include text-bg;
+      }
+      .slick-slide {
+        margin: 0rem 1rem;
+      }
+      .slick-slide:last-child {
+        margin: 0rem;
+      }
+      .slick-dots {
+        bottom: -5rem;
+        li {
+          button:before {
+            font-size: 4rem;
+            color: #fff;
+          }
+        }
+      }
+    }
     .whatsapp {
       a {
         color: green;
@@ -866,6 +916,11 @@ a {
               }
             }
           }
+        }
+      }
+      .reviews-area {
+        .review-box {
+          padding: 3rem;
         }
       }
       .whatsapp {

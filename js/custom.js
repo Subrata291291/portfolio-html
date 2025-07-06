@@ -106,3 +106,43 @@ $(document).ready(function () {
     observer.observe(section);
   });
 });
+
+// Review slider js
+$(".review-slider").slick({
+  dots: true,
+  infinite: true,
+  centerMode: true,
+  arrows: false,
+  autoplay: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  responsive: [{
+      breakpoint: 1199,
+      settings: {
+        dots: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        centerMode: false
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: {
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        centerMode: false,
+        slidesToScroll: 1,
+        centerPadding: '30px',
+      }
+    }
+  ]
+})
