@@ -7,6 +7,9 @@ body {
   color: #fff;
   background-image: url(../images/pagebg.png);
   background-position: center;
+  background-attachment: fixed;
+  transition: background-position 0.1s ease-out;
+  background-repeat: no-repeat;
 }
 
 ul, li, p, h1, h2, h3, h4, h5, h6 {

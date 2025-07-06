@@ -146,3 +146,12 @@ $(".review-slider").slick({
     }
   ]
 })
+
+// Cursor move js
+document.addEventListener('mousemove', function (e) {
+    const x = (e.clientX / window.innerWidth) * 10; // adjust 10 for stronger effect
+    const y = (e.clientY / window.innerHeight) * 10;
+
+    // Move background position
+    document.body.style.backgroundPosition = `${50 + x}% ${50 + y}%`;
+  });
