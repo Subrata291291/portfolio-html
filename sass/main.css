@@ -556,7 +556,7 @@ a {
 }
 .main .main-right .contact-area .row {
   background-color: #13151B;
-  padding: 4rem;
+  padding: 6rem 4rem;
   border-radius: 0.5rem;
 }
 .main .main-right .contact-area .contact-left {
@@ -569,7 +569,7 @@ a {
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
-.main .main-right .contact-area .contact-left form input, .main .main-right .contact-area .contact-left form select {
+.main .main-right .contact-area .contact-left form input, .main .main-right .contact-area .contact-left form select, .main .main-right .contact-area .contact-left form textarea {
   width: 100%;
   background-color: #25272D;
   padding: 1.5rem;
@@ -578,12 +578,13 @@ a {
   margin-bottom: 1rem;
   color: #fff;
 }
-.main .main-right .contact-area .contact-left form input::-moz-placeholder, .main .main-right .contact-area .contact-left form select::-moz-placeholder {
+.main .main-right .contact-area .contact-left form input::-moz-placeholder, .main .main-right .contact-area .contact-left form select::-moz-placeholder, .main .main-right .contact-area .contact-left form textarea::-moz-placeholder {
   color: #ffffff;
   opacity: 0.6;
 }
 .main .main-right .contact-area .contact-left form input::placeholder,
-.main .main-right .contact-area .contact-left form select::placeholder {
+.main .main-right .contact-area .contact-left form select::placeholder,
+.main .main-right .contact-area .contact-left form textarea::placeholder {
   color: #ffffff;
   opacity: 0.6;
 }
@@ -599,6 +600,101 @@ a {
   z-index: 1;
   width: 100%;
   margin-top: 2rem;
+}
+.main .main-right .contact-area .contact-right {
+  padding-left: 4rem;
+}
+.main .main-right .contact-area .contact-right .txt-box {
+  gap: 5rem;
+}
+.main .main-right .contact-area .contact-right p {
+  margin: 3rem 0rem;
+}
+.main .main-right .contact-area .contact-right h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Figtree", sans-serif;
+}
+.main .main-right .contact-area .contact-right h1 span {
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+.main .main-right .contact-area .contact-right h4 {
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  z-index: 1;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 2.5rem 3rem;
+  border-radius: 4px;
+  position: relative;
+  border-radius: 0.4rem;
+  font-size: 4rem;
+  font-style: italic;
+  font-family: auto;
+}
+.main .main-right .contact-area .contact-right h4:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(40, 40, 40, 0.4901960784);
+  z-index: -1;
+  left: 0;
+  top: 0;
+  border: 1px solid #3b3a3a;
+  border-radius: 4px;
+}
+.main .main-right .contact-area .contact-right .dots1 {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.main .main-right .contact-area .contact-right .dots2 {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+.main .main-right .contact-area .contact-right .dots3 {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+.main .main-right .contact-area .contact-right .dots4 {
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+.main .main-right .contact-area .contact-right ul {
+  gap: 2rem;
+}
+.main .main-right .contact-area .contact-right ul li {
+  gap: 2rem;
+  background-color: #1C1E24;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.main .main-right .contact-area .contact-right ul li .icon {
+  background-color: #25272D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  width: 5rem;
+  height: 5rem;
+}
+.main .main-right .contact-area .contact-right ul li .icon-content h3 {
+  font-size: 1.8rem;
+}
+.main .main-right .contact-area .contact-right ul li .icon-content a {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .main .main-right .whatsapp a {
   color: green;
@@ -648,10 +744,29 @@ a {
   .main .main-right .banner-area .banner-right h4 {
     font-size: 4rem;
   }
+  .main .main-right .contact-area .contact-right h1 {
+    font-size: 2.5rem;
+  }
+  .main .main-right .contact-area .contact-right h4 {
+    padding: 1.5rem 3rem;
+    font-size: 3rem;
+  }
+  .main .main-right .contact-area .contact-right ul li {
+    margin-bottom: 1rem;
+  }
 }
 @media (max-width: 1199px) {
   .main .main-right {
     margin-left: 10rem;
+  }
+  .main .main-right .title-box {
+    margin-bottom: 2rem;
+  }
+  .main .main-right .title-box h2 {
+    font-size: 8rem;
+  }
+  .main .main-right .title-box h3 {
+    font-size: 2.5rem;
   }
   .main .main-right .banner-area h1 {
     font-size: 4rem;
@@ -668,6 +783,23 @@ a {
   }
   .main .main-right .portfolio-area .tabs .tab-link {
     padding: 1rem 1rem;
+  }
+  .main .main-right .contact-area .contact-right {
+    padding-left: 0rem;
+  }
+  .main .main-right .contact-area .contact-right h1 {
+    font-size: 3rem;
+  }
+  .main .main-right .contact-area .contact-right h4 {
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    font-size: 3rem;
+  }
+  .main .main-right .contact-area .contact-right ul li {
+    margin-bottom: 1rem;
+  }
+  .main .main-right .contact-area .contact-right ul li .icon-content a {
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 991px) {
@@ -727,6 +859,12 @@ a {
   .main .main-right .portfolio-area .tabs {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+  .main .main-right .contact-area .contact-right .txt-box {
+    margin-top: 3rem;
+  }
+  .main .main-right .contact-area .contact-right ul li .icon-content a {
+    font-size: 1.6rem;
   }
   .main .main-right .whatsapp a {
     font-size: 5rem;
@@ -815,7 +953,7 @@ a {
     padding: 3rem;
   }
   .main .main-right .contact-area .row {
-    padding: 2rem;
+    padding: 3rem 2rem 2rem;
   }
   .main .main-right .contact-area .contact-left {
     padding: 3rem;

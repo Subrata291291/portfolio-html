@@ -585,7 +585,7 @@ a {
     .contact-area {
       .row {
         background-color: #13151B;
-        padding: 4rem;
+        padding: 6rem 4rem;
         border-radius: 0.5rem;
       }
       .contact-left {
@@ -598,7 +598,7 @@ a {
             text-transform: uppercase;
             margin-bottom: 2rem;
           }
-          input,select {
+          input,select,textarea {
             width: 100%;
             background-color: #25272D;
             padding: 1.5rem;
@@ -608,7 +608,8 @@ a {
             color: #fff;
           }
           input::placeholder,
-          select::placeholder {
+          select::placeholder,
+          textarea::placeholder {
             color: #ffffff;
             opacity: 0.6;
           }
@@ -616,6 +617,99 @@ a {
             @include common-btn;
             width: 100%;
             margin-top: 2rem;
+          }
+        }
+      }
+      .contact-right {
+        padding-left: 4rem;
+        .txt-box {
+          gap: 5rem;
+        }
+        p {
+          margin: 3rem 0rem;
+        }
+        h1 {
+          font-size: 5rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          font-family: "Figtree", sans-serif;
+          span {
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+          }
+        }
+        h4 {
+          background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+          z-index: 1;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          text-transform: uppercase;
+          padding: 2.5rem 3rem;
+          border-radius: 4px;
+          position: relative;
+          border-radius: 0.4rem;
+          font-size: 4rem;
+          font-style: italic;
+          font-family: auto;
+        }
+        h4:before {
+          position: absolute;
+          content: "";
+          height: 100%;
+          width: 100%;
+          background-color: rgba(40, 40, 40, 0.4901960784);
+          z-index: -1;
+          left: 0;
+          top: 0;
+          border: 1px solid #3b3a3a;
+          border-radius: 4px;
+        }
+        .dots1 {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+        }
+        .dots2 {
+            position: absolute;
+            top: -5px;
+            left: -5px;
+        }
+        .dots3 {
+            position: absolute;
+            bottom: -5px;
+            right: -5px;
+        }
+        .dots4 {
+            position: absolute;
+            bottom: -5px;
+            left: -5px;
+        }
+        ul {
+          gap: 2rem;
+          li {
+            gap: 2rem;
+            background-color: #1C1E24;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            .icon {
+              background-color: #25272D;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 5rem;
+              width: 5rem;
+              height: 5rem;
+            }
+            .icon-content {
+              h3 {
+                font-size: 1.8rem;
+              }
+              a {
+                font-size: 2rem;
+                @include text-bg;
+              }
+            }
           }
         }
       }
@@ -694,6 +788,22 @@ a {
           }
         }
       }
+      .contact-area {
+        .contact-right {
+          h1 {
+            font-size: 2.5rem;
+          }
+          h4 {
+            padding: 1.5rem 3rem;
+            font-size: 3rem;
+          }
+          ul {
+            li {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -701,6 +811,15 @@ a {
   .main {
     .main-right {
       margin-left: 10rem;
+      .title-box {
+        margin-bottom: 2rem;
+        h2 {
+          font-size: 8rem;
+        }
+        h3 {
+          font-size: 2.5rem;
+        }
+      }
       .banner-area {
         h1 {
           font-size: 4rem;
@@ -734,6 +853,29 @@ a {
         .tabs {
           .tab-link {
             padding: 1rem 1rem;
+          }
+        }
+      }
+      .contact-area {
+        .contact-right {
+          padding-left: 0rem;
+          h1 {
+            font-size: 3rem;
+          }
+          h4 {
+            margin-top: 2rem;
+            padding: 1.5rem 3rem;
+            font-size: 3rem;
+          }
+          ul {
+            li {
+              margin-bottom: 1rem;
+              .icon-content {
+                a {
+                  font-size: 1.2rem;
+                }
+              }
+            }
           }
         }
       }
@@ -821,6 +963,22 @@ a {
         .tabs {
           flex-wrap: wrap;
           gap: 1rem;
+        }
+      }
+      .contact-area {
+        .contact-right {
+          .txt-box {
+            margin-top: 3rem;
+          }
+          ul {
+            li {
+              .icon-content {
+                a {
+                  font-size: 1.6rem;
+                }
+              }
+            }
+          }
         }
       }
       .whatsapp {
@@ -963,7 +1121,7 @@ a {
       }
       .contact-area {
         .row {
-          padding: 2rem;
+          padding: 3rem 2rem 2rem;
         }
         .contact-left {
           padding: 3rem;
