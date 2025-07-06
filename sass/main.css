@@ -814,6 +814,12 @@ a {
   .main .main-right .reviews-area .review-box {
     padding: 3rem;
   }
+  .main .main-right .contact-area .row {
+    padding: 2rem;
+  }
+  .main .main-right .contact-area .contact-left {
+    padding: 3rem;
+  }
   .main .main-right .whatsapp a {
     font-size: 4rem;
   }
