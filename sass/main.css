@@ -554,6 +554,52 @@ a {
   font-size: 4rem;
   color: #fff;
 }
+.main .main-right .contact-area .row {
+  background-color: #13151B;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+.main .main-right .contact-area .contact-left {
+  background-color: #1C1E24;
+  padding: 4rem;
+  border-radius: 0.5rem;
+}
+.main .main-right .contact-area .contact-left form h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.main .main-right .contact-area .contact-left form input, .main .main-right .contact-area .contact-left form select {
+  width: 100%;
+  background-color: #25272D;
+  padding: 1.5rem;
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.main .main-right .contact-area .contact-left form input::-moz-placeholder, .main .main-right .contact-area .contact-left form select::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
+.main .main-right .contact-area .contact-left form input::placeholder,
+.main .main-right .contact-area .contact-left form select::placeholder {
+  color: #ffffff;
+  opacity: 0.6;
+}
+.main .main-right .contact-area .contact-left form button {
+  background: linear-gradient(90deg, #2CE97A 0%, #D9D314 100%);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin-top: 2rem;
+}
 .main .main-right .whatsapp a {
   color: green;
   font-size: 7rem;

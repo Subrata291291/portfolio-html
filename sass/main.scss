@@ -582,6 +582,44 @@ a {
         }
       }
     }
+    .contact-area {
+      .row {
+        background-color: #13151B;
+        padding: 4rem;
+        border-radius: 0.5rem;
+      }
+      .contact-left {
+        background-color: #1C1E24;
+        padding: 4rem;
+        border-radius: 0.5rem;
+        form {
+          h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+          }
+          input,select {
+            width: 100%;
+            background-color: #25272D;
+            padding: 1.5rem;
+            border: none;
+            outline: none;
+            margin-bottom: 1rem;
+            color: #fff;
+          }
+          input::placeholder,
+          select::placeholder {
+            color: #ffffff;
+            opacity: 0.6;
+          }
+          button {
+            @include common-btn;
+            width: 100%;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
     .whatsapp {
       a {
         color: green;
