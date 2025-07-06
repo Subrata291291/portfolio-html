@@ -170,6 +170,9 @@ a {
 .main .nav-area ul li:hover:before {
   width: 100%;
 }
+.main .nav-area ul li:has(a.active)::before {
+  width: 100%;
+}
 .main .main-right {
   padding-top: 3rem;
 }

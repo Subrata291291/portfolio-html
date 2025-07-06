@@ -172,6 +172,9 @@ a {
       li:hover:before {
         width: 100%;
       }
+      li:has(a.active)::before {
+        width: 100%;
+      }
     }
   }
   .main-right {

@@ -75,3 +75,34 @@ $(document).ready(function () {
     $("#" + tab_id).addClass('current');
   });
 });
+
+
+// Navbar Active class
+  document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("div[id]"); 
+  const navLinks = document.querySelectorAll(".nav-area ul li a");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const sectionId = entry.target.id;
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${sectionId}`) {
+              link.classList.add("active");
+            }
+          });
+        }
+      });
+    },
+    {
+      threshold: 0.3, // show active if 30% visible (more flexible than 0.5)
+    }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+});
